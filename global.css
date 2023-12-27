@@ -9,9 +9,18 @@ iframe {
   height: 100vh;
 }
 
-.phrase {
-  font-size: small;
-  padding: 4px 8px 4px 20px;
+.container {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;  
+}
+
+.headline {
+  padding: 4px 8px 4px 15px;
 }
 
 h1,h2,h3,h4 {
@@ -19,14 +28,11 @@ h1,h2,h3,h4 {
 }
 
 .topnav {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: space-around;
   background-color: #F2F2F2;
-  overflow-x: hidden;
-  padding-top: 10px;
 }
 
 .topnav a {
@@ -42,8 +48,11 @@ h1,h2,h3,h4 {
 }
 
 .main {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
   margin-left: 10px;
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 18px;
   padding: 10px 10px;
 }
